@@ -1,0 +1,25 @@
+<app-header title="Gestión de Penalización"></app-header>
+
+<ion-content>
+  <ion-card *ngFor="let disableduser of disabledUser; let i = index">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Codigo</th>
+          <th>Nombre</th>
+          <th>Ciclo</th>
+          <th>Carrera</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ disableduser.code }}</td>
+          <td>{{ disableduser.name }}</td>
+          <td>{{ disableduser.cicle }}</td>
+          <td>{{ disableduser.career }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btnrecha" (click)="enableUser(disableduser.email)"><ion-icon style="margin-right: 5px;" name="happy-outline"/>Desbloquear</button>
+  </ion-card>
+</ion-content>

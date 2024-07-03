@@ -1,0 +1,26 @@
+<app-header title="Gestión de Reserva"></app-header>
+
+<ion-content>
+  <ion-card *ngFor="let disabledslot of disabledSlots; let i = index">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Sala</th>
+          <th>Fecha</th>
+          <th>Horario</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ disabledslot.sala }}</td>
+          <td>{{ disabledslot.date }}</td>
+          <td>{{ disabledslot.timeSlot }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <button class="btnrecha" (click)="updateSlot(i)">
+      <ion-icon style="margin-right: 5px;" name="refresh-outline"></ion-icon>
+      Actualizar
+    </button>
+  </ion-card>
+</ion-content>

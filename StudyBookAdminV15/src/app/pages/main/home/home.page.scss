@@ -1,0 +1,160 @@
+ion-content {
+  align-items: center;
+
+}
+
+ion-card-content{
+  text-align: center;
+  align-items: center;
+}
+
+.fondoC{
+    --background:  #F9F8F9;
+ 
+}
+
+
+
+.centro {
+  text-align: center;
+}
+
+.cabeceraimg {
+  position: absolute;
+  top: 0;
+}
+.subtitulos{
+  color: #3E4AA4;
+  text-align: center;
+}
+.azul{
+  --background: #3E4AA4;
+}
+
+.pmenu {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bold ;
+  color: rgb(13, 0, 255);
+  font-size: 40px;
+  margin-top: 0;
+}
+
+
+.classbotones{
+
+  align-items: center;
+  
+  justify-content: center;
+}
+
+.medio{
+  text-align: center;
+}
+
+ion-card {
+  --background: #E60027;
+}
+
+
+
+.but{
+  width: 350px;
+  height: 50px;
+  margin: 15px;
+  font-size: 20px;
+text-align: center;
+}
+
+
+
+ion-card-title{
+  color: #ffff;
+  font-size: 26px;
+  font-weight:bold;
+}
+
+.negrita{
+  font-weight:bold
+}
+
+ion-card-subtitle{
+  text-align: justify;
+  font-size: 16px;
+  color: #ffff;
+}
+
+/* footer.component.scss */
+
+
+/* swimper*/
+
+.ambientes{
+  width: 400px;
+  height:  200%;
+}
+.card{
+  
+  height:  100px;
+}
+swiper-slide {
+
+  display: flex;
+  position: relative;
+
+  flex-direction: column;
+  flex-shrink: 0;
+  align-items: center;
+  
+  justify-content: center;
+
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* CALENDARIO*/
+
+.calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  background-color: #2b3d63;
+  top: -5px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: white;
+  margin-bottom: 16px;
+}
+
+ion-grid {
+  width: 100%;
+}
+ion-button{
+  margin-top: 5px;
+  width: 400px;
+  font-size: 20px;
+
+}
+.date-box {
+  background-color: white;
+  color: #2b3d63;
+  border-radius: 10px;
+  padding: 8px;
+  text-align: center;
+}
+
+.selected-date {
+  background-color: red;
+  color: white;
+}
+
+ion-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

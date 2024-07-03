@@ -1,0 +1,37 @@
+<app-header title="Gestión de Salas"></app-header>
+<ion-content>
+  <div id="container">
+    <img src="../assets/assetsmari/biblioteca.png" alt="Imagen">
+  </div>
+
+  <!-- Selección de sala: Menú desplegable para elegir una sala -->
+  <div>
+    <ion-item>
+      <ion-label>Selecciona una sala</ion-label>
+      <ion-select [(ngModel)]="selectedSala" (ionChange)="cambiarSala()">
+        <!-- Iteración sobre las salas disponibles -->
+        <ion-select-option *ngFor="let sala of mantenimiento" [value]="sala.id">{{ sala.nombre }}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </div>
+
+  <!-- Contenedor para mostrar los datos de la sala seleccionada -->
+  <div id="contenidoSala">
+    <!-- Sección que se actualizará dinámicamente cuando se seleccione una sala -->
+    <div *ngIf="datosSala">
+      <!-- Iteración sobre los elementos de la sala seleccionada -->
+      <div class="container5" *ngFor="let item of datosSalaItems">
+        <div class="contenedores">
+          <!-- Icono del elemento -->
+          <img class="imagen" [src]="item.icon" alt="Imagen" style="width: 60px; margin-right: 10px;">
+          <!-- Título del elemento -->
+          <div class="subsection">
+            <h3 class="subtitulo">{{ item.titulo }}</h3>
+            <!-- Valor del elemento -->
+            <p class="texto">{{ item.valor }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

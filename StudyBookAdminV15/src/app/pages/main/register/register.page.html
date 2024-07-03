@@ -1,0 +1,27 @@
+<app-header backButton="/main/home" title="StudyBook"></app-header>
+
+<ion-content class="fondo">
+
+  <form [formGroup]="registerForm" (ngSubmit)="register()">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" formControlName="email"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" formControlName="clave"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Rango</ion-label>
+      <ion-select formControlName="rango">
+        <ion-select-option value="super">Super</ion-select-option>
+        <ion-select-option value="admin">Admin</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-button color="danger" expand="block" mode="ios" type="submit" [disabled]="registerForm.invalid">Registrar</ion-button>
+  </form>
+
+</ion-content>

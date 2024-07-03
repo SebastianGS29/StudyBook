@@ -1,0 +1,32 @@
+<app-header title="Reportes"></app-header>
+
+<ion-content>
+  <button class="btnrecha" (click)="descargarPdf()">
+    <ion-icon style="margin-left: 10px; margin-right: 5px;width: 25px;height: 25px; align-self: center;" name="archive-outline"></ion-icon>
+    Descargar PDF
+  </button>
+  <ion-card *ngFor="let reporte of reservations">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Sala</th>
+          <th>Fecha</th>
+          <th>Horario</th>
+          <th>Acompañantes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ reporte.sala }}</td>
+          <td>{{ reporte.date }}</td>
+          <td>{{ reporte.horario }}</td>
+          <td class="center-content">
+            <ul>
+              <li *ngFor="let student of reporte.students">{{ student }}</li>
+            </ul>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </ion-card>
+</ion-content>

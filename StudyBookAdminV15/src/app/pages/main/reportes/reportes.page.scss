@@ -1,0 +1,82 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: black;
+}
+
+.table-cell {
+  font-weight: bold;
+}
+
+.top-left {
+  position: relative;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.center-content {
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+}
+
+.middle-text {
+  text-align: center;
+  margin-top: 9%;
+  transform: translateY(-20%);
+  transform: translateX(-10%);
+  padding: 5px;
+  width: 200px;
+  height: 50px;
+}
+
+.btnrecha {
+  margin: 5px;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 50px;
+  background-color: rgba(255, 0, 0, 0.712);
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.button-container {
+  display: flex;
+  padding: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #212529;
+}
+
+table th,
+table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+  background-color: white; /* Fondo blanco para todas las celdas */
+}
+
+table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+table tr {
+  text-align: center;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: rgba(0, 0, 0, 0.05); /* Fondo gris claro para filas impares */
+}
